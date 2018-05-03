@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="js/node_modules/patternfly/dist/css/patternfly.css">
+<link rel="stylesheet" type="text/css"
+	href="js/node_modules/patternfly/dist/css/patternfly-additions.css">
+	<script src="scripts/main.js"></script>
+</head>
+<body background="assets/img/classic-redhat-linux.jpg">
+	<div class="login-pf-page">
+		<div class="container-fluid">
+			<div class="row">
+				<div
+					class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+					<header class="login-pf-page-header">
+						<img class="login-pf-brand" src="assets/img/redhat-logo.png" alt=" logo" />
+					</header>
+					<div class="row">
+						<div
+							class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+							<div class="card-pf">
+								<header class="login-pf-header">
+									<h1> Insira seus dados abaixo: </h1>
+								</header>
+								<form>
+									<div class="form-group">
+										<label class="sr-only" for="inputNome">Nome Completo</label> <input
+											type="text" class="form-control input-lg" id="inputNome"
+											placeholder="Nome Completo" required>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputCpf">CPF</label> <input
+											type="text" class="form-control input-lg" id="inputCpf"
+											placeholder="CPF" required>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputCargo">Cargo</label> <input
+											type="text" class="form-control input-lg" id="inputCargo"
+											placeholder="Cargo" required>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputTelefone">Telefone</label> <input
+											type="text" class="form-control input-lg" id="inputTelefone"
+											placeholder="Telefone" required>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputEmpresa">Empresa</label> <input
+											type="text" class="form-control input-lg" id="inputEmpresa"
+											placeholder="Empresa" required>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputEmail">E-mail</label> <input
+											type="email" class="form-control input-lg" id="inputEmail"
+											placeholder="E-mail" required>
+									</div>
+
+									<button type="submit" id="botaoPrincipal" onsubmit="proxPag()" class="btn btn-primary btn-block btn-lg">
+										Próxima Página</button>
+								</form>
+
+							</div>
+							<!-- card -->
+
+						</div>
+						<!-- col -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- col -->
+			</div>
+			<!-- login-pf-page -->
+		</div>
+		<!--row-->
+	</div>
+	<!--container-->
+
+
+</body>
+</html>
+
+
