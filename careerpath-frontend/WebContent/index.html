@@ -34,7 +34,7 @@
 									<div class="form-group">
 										<label class="sr-only" for="inputCpf">CPF</label> <input
 											type="text" class="form-control input-lg" id="inputCpf"
-											placeholder="CPF" required>
+											placeholder="CPF" onblur="formataCPF();" maxlength="11">
 									</div>
 									<div class="form-group">
 										<label class="sr-only" for="inputCargo">Cargo</label> <input
@@ -57,7 +57,7 @@
 											placeholder="E-mail" required>
 									</div>
 
-									<button type="submit" id="botaoPrincipal" onsubmit="proxPag()" class="btn btn-primary btn-block btn-lg">
+									<button type="submit" id="botaoPrincipal"  class="btn btn-primary btn-block btn-lg">
 										Próxima Página</button>
 								</form>
 

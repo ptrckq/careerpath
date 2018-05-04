@@ -3,6 +3,8 @@ package dao;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.sql.ResultSet;
+import java.util.List;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -66,4 +68,15 @@ public class GenericDAO<ENTIDADE> {
 		}
 		return ent;
 	}
+	
+	
+	public List<ENTIDADE> getLista() {
+		return em.createQuery("select a from " + entidade.getName() + " a").getResultList();
+	}
+	
+	public List getListaDeCursos(){
+		
+		return em.createQuery("select a.codigo_acreditacao, a.nome_acreditacao, a.id_perfil from Acreditacao a, Acreditacao_Produto ap where Acreditacao.codigo_acreditacao = Acreditacao_Produto.Acreditacao_codigo_acreditacao ").getResultList();
+	}
+	
 }

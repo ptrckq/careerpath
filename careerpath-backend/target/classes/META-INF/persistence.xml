@@ -8,6 +8,10 @@
 		<class>model.Parceiro</class>
 		<class>model.Empresa</class>
 		<class>model.RelatorioProduto</class>
+		<class>model.Acreditacao</class>
+		<class>model.Produto</class>
+		<class>model.AcreditacaoProduto</class>
+		
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="validate" />
 			<property name="hibernate.show_sql" value="false" />
