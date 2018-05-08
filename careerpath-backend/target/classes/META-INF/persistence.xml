@@ -11,6 +11,7 @@
 		<class>model.Acreditacao</class>
 		<class>model.Produto</class>
 		<class>model.AcreditacaoProduto</class>
+		<class>model.Perfil</class>
 		
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="validate" />
